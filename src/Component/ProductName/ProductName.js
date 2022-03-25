@@ -1,10 +1,9 @@
 import React from 'react';
 
 const ProductName = ({name}) => {
-    console.log(name);
     return (
         <div>
-            
+            <li>{name}</li>
         </div>
     );
 };
