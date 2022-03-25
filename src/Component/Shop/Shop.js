@@ -13,18 +13,20 @@ const Shop = () => {
 
     const addToCart = (selectedProduct) => {
         let newCart;
+        // console.log(newCart);
+        
         const existing = cart.find(product => product.id === selectedProduct.id);
         if (!existing) {
-            // selectedProduct.quantity = 1
             newCart = [...cart , selectedProduct]
         }
         else{
-            const rest = cart.filter(product => product.id !== selectedProduct.id);
-            // existing.quantity = existing.quantity + 1
-            newCart = [...rest , existing]
+        const rest = cart.filter(product => product.id !== selectedProduct.id);
+        newCart = [...rest , existing]
         }
-        console.log(newCart);
-        setCart(newCart)
+        if(newCart.length > 4){
+            alert('already added more then 4')
+        }
+        setCart(newCart.slice(0,4))
     }
 
     return (
@@ -40,7 +42,9 @@ const Shop = () => {
                 }
             </div>
             <div>
-                <Cart></Cart>
+                <Cart
+                cart = {cart}
+                ></Cart>
             </div>
         </div>
     );
