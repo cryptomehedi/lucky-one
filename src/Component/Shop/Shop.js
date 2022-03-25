@@ -24,9 +24,23 @@ const Shop = () => {
         newCart = [...rest , existing]
         }
         if(newCart.length > 4){
-            alert('already added more then 4')
+            alert('already added 4 Items')
         }
         setCart(newCart.slice(0,4))
+    }
+
+    const randomName= (name)=>{
+        
+        let number = name.length ;
+            // console.log(name.length);
+            number = Math.floor(Math.random()* (name.length))
+        if(number != 0){
+        console.log(number);
+        console.log(name[number-1]);
+        }else{
+            console.log("zero");
+        }
+        
     }
 
     return (
@@ -44,6 +58,7 @@ const Shop = () => {
             <div>
                 <Cart
                 cart = {cart}
+                randomName = {randomName}
                 ></Cart>
             </div>
         </div>
