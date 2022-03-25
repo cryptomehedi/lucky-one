@@ -4,7 +4,6 @@
         "name": "Almond Toe Court Shoes",
         "category": "Womens Footwear",
         "price": 350,
-        "stock": 5,
 		"url": "https://i.pinimg.com/736x/dc/f6/6a/dcf66ac9ee4b38440b84d27d551ca2d9.jpg"
     },
     {
@@ -12,7 +11,6 @@
         "name": "Suede Shoes",
         "category": "Womens Footwear",
         "price": 420,
-        "stock": 4,
 		"url":"https://img.freepik.com/free-photo/leather-boots_1203-8142.jpg?t=st=1648228333~exp=1648228933~hmac=b12f1e2f403411b5284714a559a3029bbb969f4abf71fd342974bc6478feffc1&w=740"
     },
     {
@@ -20,14 +18,13 @@
         "name": "Leather Driver Saddle Loafers",
         "category": "Mens Footwear",
         "price": 340,
-        "stock": 12,
 		"url": "https://img.freepik.com/free-photo/white-leather-loafers-shoes-women-s-fashion_53876-119816.jpg?t=st=1648228290~exp=1648228890~hmac=852d4c9173e7c9a76140cbf1756992260e4dc090f1b7828b05485a6accbda506&w=740"
     },
     {
         "id": 4,
         "name": "Flip Flops",
         "category": "Mens Footwear",
-        "price": 190,
+        "price": 90,
         "stock": 6,
 		"url": "https://img.freepik.com/free-photo/red-flipflops-beach-sandals-isolated-white-background_1101-1999.jpg?t=st=1648228250~exp=1648228850~hmac=3dd485343de1a20aede4bc54e4d6d77b1280719c5e2969016151ef3e4407c479&w=740"
     },
@@ -35,8 +32,7 @@
         "id": 5,
         "name": "Flip Flops Green",
         "category": "Mens Footwear",
-        "price": 190,
-        "stock": 0,
+        "price": 90,
 		"url": "https://img.freepik.com/free-photo/flip-flop-beach-shoes-green-isolated-white-background_1101-2039.jpg?t=st=1648228206~exp=1648228806~hmac=0ac30ee759b136613b9418c0e2d3d0b1312cbe0173929d2596150de2ddb9d6b2&w=740"
     },
     {
@@ -44,7 +40,6 @@
         "name": "Pair Trainers Shoe",
         "category": "Trainers Shoe",
         "price": 167,
-        "stock": 6,
 		"url": "https://img.freepik.com/free-photo/pair-trainers_144627-3799.jpg?t=st=1648223045~exp=1648223645~hmac=2d9df8840c20bfb6d70bb9ed061b456db60ee2fa6fd8db2663bda7cd233deb30&w=740"
     },
     {
@@ -52,7 +47,6 @@
         "name": "Women heeled shoes",
         "category": "Womens shoes",
         "price": 300,
-        "stock": 5,
 		"url": "https://img.freepik.com/free-photo/women-heeled-shoes_1303-5875.jpg?t=st=1648227563~exp=1648228163~hmac=7bdacd2549c2d6b38927f17e0b8fd317c34c6069aaf054e7d1d50836095a49de&w=740"
     },
     {
@@ -60,7 +54,6 @@
         "name": "Sneakers shoes",
         "category": "Mens Casualwear",
         "price": 499,
-        "stock": 9,
 		"url": "https://img.freepik.com/free-photo/sneakers-shoes_1203-8036.jpg?t=st=1648227563~exp=1648228163~hmac=96e80b6182c3d8c18613fbd41bd20c62ed2fbd89164d0c4a5675848f512cbdbe&w=740"
     },
     {
@@ -68,7 +61,6 @@
         "name": "Brown leather shoe",
         "category": "Mens Casualwear",
         "price": 499,
-        "stock": 9,
 		"url": "https://img.freepik.com/free-photo/brown-leather-shoes_1203-7562.jpg?t=st=1648227563~exp=1648228163~hmac=91ca7d531ef1e72054d859725ac6dd60d9ae4519068cb19cd59c3b8f6cf603b1&w=740"
     },
     {
@@ -76,7 +68,6 @@
         "name": "Unbranded modern sporty shoes",
         "category": "Mens Formalwear",
         "price": 360,
-        "stock": 2,
 		"url": "https://img.freepik.com/free-photo/unbranded-modern-sporty-shoes-sneakers-white-isolated_120794-337.jpg?w=740"
     },
     {
@@ -84,7 +75,6 @@
         "name": "Brown leather slip-on men's shoe",
         "category": "Mens Formalwear",
         "price": 750,
-        "stock": 1,
 		"url": "https://img.freepik.com/free-photo/brown-leather-slip-men-s-shoes-fashion_53876-104481.jpg?t=st=1648227563~exp=1648228163~hmac=649800b1150dc427d56ac07d48f5b87a61ccb3365f18dd9136d6c5815afa2522&w=740"
     },
     {
@@ -92,7 +82,6 @@
         "name": "Black womens sports sneaker",
         "category": "Womens Formalwear",
         "price": 270,
-        "stock": 10,
 		"url": "https://img.freepik.com/free-photo/black-womens-sports-sneaker-isolate_288990-472.jpg?w=740"
     },
     {
@@ -100,7 +89,6 @@
         "name": "Classic stylish men's shoe",
         "category": "Womens Formalwear",
         "price": 540,
-        "stock": 5,
 		"url": "https://img.freepik.com/free-photo/classic-stylish-men-s-shoes-closeup-gray_169016-3916.jpg?t=st=1648228063~exp=1648228663~hmac=f90fec3a9395eb77afa11ab10fff69d0fcd12853d66cd05c1b28e16be6c33077&w=740"
     }
 ]
