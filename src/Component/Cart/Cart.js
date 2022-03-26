@@ -8,18 +8,12 @@ const Cart = (props) => {
     const {cart} = props
     const {randomName} = props
     const {namesList} = props
-    // console.log(namesR);
+    const {resetData} = props
     let newName = [];
     for(const product of cart) {
-        // console.log(product);
         let nameAdd = product.name
         newName.push(nameAdd)
     }
-
-    
-    // const randomName= (props)=>{
-        
-    // }
     
     return (
         <div className='sticky top-8 py-8 px-5'>

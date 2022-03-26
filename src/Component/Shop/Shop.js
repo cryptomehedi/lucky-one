@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
+import Question from '../Question/Question';
 
 const Shop = () => {
     const [products, setProducts] = useState([])
@@ -32,29 +33,15 @@ const Shop = () => {
     
     const randName= (props)=>{
         setRanName(props)
-        // const name= (props) => props[Math.floor(Math.random()*props.length)]
-
-        // console.log(name);
-        // setRanName(name)
-        
-
-
-
-
-        /* let number = name.length ;
-            // console.log(name.length);
-            number = Math.floor(Math.random()* (name.length))
-        if(number != 0){
-        console.log(number);
-        console.log(name[number-1]);
-        }else{
-            console.log(name[number+1]);
-        }
-         */
+    }
+    const resetData =()=>{
+        setCart([])
+        setRanName([])
     }
 
     return (
-        <div className="grid grid-cols-shop_col w-auto">
+        <div>
+            <div className="grid grid-cols-shop_col w-auto">
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {
                     products.map(product => <Product 
@@ -70,8 +57,11 @@ const Shop = () => {
                 namesList= {ranName}
                 cart = {cart}
                 randomName = {randName}
+                resetData = {resetData}
                 ></Cart>
             </div>
+        </div>
+        <Question></Question>
         </div>
     );
 };
