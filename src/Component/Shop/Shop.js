@@ -5,6 +5,7 @@ import Product from '../Product/Product';
 const Shop = () => {
     const [products, setProducts] = useState([])
     const [cart , setCart] = useState([])
+    const [ranName , setRanName] = useState([])
     useEffect( () => {
         fetch('data.json')
         .then(res => res.json())
@@ -28,19 +29,28 @@ const Shop = () => {
         }
         setCart(newCart.slice(0,4))
     }
+    
+    const randName= (props)=>{
+        setRanName(props)
+        // const name= (props) => props[Math.floor(Math.random()*props.length)]
 
-    const randomName= (name)=>{
+        // console.log(name);
+        // setRanName(name)
         
-        let number = name.length ;
+
+
+
+
+        /* let number = name.length ;
             // console.log(name.length);
             number = Math.floor(Math.random()* (name.length))
         if(number != 0){
         console.log(number);
         console.log(name[number-1]);
         }else{
-            console.log("zero");
+            console.log(name[number+1]);
         }
-        
+         */
     }
 
     return (
@@ -57,8 +67,9 @@ const Shop = () => {
             </div>
             <div>
                 <Cart
+                namesList= {ranName}
                 cart = {cart}
-                randomName = {randomName}
+                randomName = {randName}
                 ></Cart>
             </div>
         </div>

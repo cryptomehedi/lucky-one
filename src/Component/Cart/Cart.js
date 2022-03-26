@@ -7,7 +7,8 @@ import RandomItem from '../RandomItem/RandomItem';
 const Cart = (props) => {
     const {cart} = props
     const {randomName} = props
-    // console.log(cart);
+    const {namesList} = props
+    // console.log(namesR);
     let newName = [];
     for(const product of cart) {
         // console.log(product);
@@ -15,6 +16,11 @@ const Cart = (props) => {
         newName.push(nameAdd)
     }
 
+    
+    // const randomName= (props)=>{
+        
+    // }
+    
     return (
         <div className='sticky top-8 py-8 px-5'>
             <div>
@@ -23,13 +29,13 @@ const Cart = (props) => {
                 newName.map(names => <ProductName name ={names} key={names}></ProductName>)
             }
             <br />
-            <button onClick={()=>randomName(newName)} className='bg-transparent border-2 hover:text-white rounded hover:bg-green-600 font-semibold p-2 mb-3'>Choose 1 Item For ME</button>
+            <button onClick={() =>randomName(newName[Math.floor(Math.random()*newName.length)])} className='bg-transparent border-2 hover:text-white rounded hover:bg-green-600 font-semibold p-2 mb-3'>Choose 1 Item For ME</button>
             <br />
-            <button className='bg-transparent border-2 hover:text-white w-24 rounded hover:bg-red-600 font-semibold p-2'>Rest</button>
+            <button onClick={resetData} className='bg-transparent border-2 hover:text-white w-24 rounded hover:bg-red-600 font-semibold p-2'>Rest</button>
             </div>
             <hr />
             <div>
-                <RandomItem></RandomItem>
+                <RandomItem name = {namesList}></RandomItem>
             </div>
         </div>
     );
