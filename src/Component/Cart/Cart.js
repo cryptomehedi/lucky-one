@@ -14,9 +14,9 @@ const Cart = (props) => {
         let nameAdd = product.name
         newName.push(nameAdd)
     }
-    
+
     return (
-        <div className='sticky top-8 py-8 px-5'>
+        <div className='sticky top-8 py-8 px-5 border-2 ml-2 mt-12 border-slate-500 rounded border-solid'>
             <div>
             <h4 className='text-xl font-semibold'>Selected Items Name <FontAwesomeIcon icon={faArrowDownLong}></FontAwesomeIcon> </h4><br />
             {
