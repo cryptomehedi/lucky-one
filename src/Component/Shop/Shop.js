@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import Question from '../Question/Question';
+import { toast } from 'react-toastify';
+import { Zoom , Slide} from 'react-toastify';
 
 const Shop = () => {
     const [products, setProducts] = useState([])
@@ -20,13 +22,30 @@ const Shop = () => {
         const existing = cart.find(product => product.id === selectedProduct.id);
         if (!existing) {
             newCart = [...cart , selectedProduct]
+            toast.success('Added to cart successfully', {
+                position: "top-center",
+                hideProgressBar: true, 
+                transition : Slide,
+                autoClose: 5000,
+            })
         }
         else{
-        const rest = cart.filter(product => product.id !== selectedProduct.id);
-        newCart = [...rest , existing]
+            // const rest = cart.filter(product => product.id !== selectedProduct.id);
+            // newCart = [...rest , existing]
+            toast.warn('Already added to cart', {
+                position: "top-center",
+                hideProgressBar: true, 
+                transition : Slide,
+                autoClose: 5000,
+            })
         }
         if(newCart.length > 4){
-            alert('already added 4 Items')
+            toast.warn('already added 4 Items',{
+                position: "top-center",
+                hideProgressBar: true, 
+                transition : Zoom,
+                autoClose: 5000,
+            })
         }
         setCart(newCart.slice(0,4))
     }
